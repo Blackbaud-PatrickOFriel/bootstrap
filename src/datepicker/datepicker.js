@@ -811,7 +811,6 @@ function($compile, $parse, $document, $rootScope, $position, dateFilter, datePar
 .directive('datepickerPopupWrap', function() {
   return {
     restrict:'EA',
-    replace: true,
     transclude: true,
     templateUrl: function(element, attrs) {
       return attrs.templateUrl || 'template/datepicker/popup.html';
